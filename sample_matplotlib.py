@@ -10,9 +10,10 @@ def main():
     y1 = np.random.random(10)
     y2 = np.random.random(10)
 
-    plt.scatter(x, y1, color="b")
-    plt.scatter(x, y2, color="r")
-    plt.savefig("sample_matplotlib.png")
+    plt.scatter(x, y1, color="r")  # 散布図, 赤で
+    plt.plot(x, y2, color="b")  # 折れ線図, 青で
+    plt.savefig("sample_matplotlib.png")  # グラフを保存
+                                          # 表示したい場合はplt.show()
 
 
 if __name__ == '__main__':
