@@ -22,7 +22,7 @@ def main():
     data = load_data('data.txt')
     print(data)
 
-    # acutually this same as np.loadtxt('data.txt')
+    # acutually upper is same as np.loadtxt('data.txt')
     print("with numpy.loadtxt function:")
     data = np.loadtxt('data.txt')
     print(data)
