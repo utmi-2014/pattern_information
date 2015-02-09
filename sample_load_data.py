@@ -6,7 +6,7 @@ import numpy as np
 
 def load_data(filename):
     data = []
-    with open(filename, "rb") as f:
+    with open(filename, 'rb') as f:
         for row in f.readlines():
             # firstly, row is like '  1.6191290e+000  4.0366157e+000\r'
             # row.strip() returns '1.6191290e+000  4.0366157e+000'
@@ -18,7 +18,13 @@ def load_data(filename):
 
 
 def main():
-    data = load_data("data.txt")
+    print("with load_data function:")
+    data = load_data('data.txt')
+    print(data)
+
+    # acutually this same as np.loadtxt('data.txt')
+    print("with numpy.loadtxt function:")
+    data = np.loadtxt('data.txt')
     print(data)
 
 
